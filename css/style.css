@@ -197,6 +197,17 @@ img {
     gap: 30px;
 }
 
+@media (max-width: 600px) {
+    .content {
+        grid-template-columns: auto;
+    }
+
+    .imagem-1, .imagem-2 {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
 .col-wide {
     grid-column: 1 / -1;
 }
@@ -327,6 +338,14 @@ P {
     align-content: start;
     padding: 30px;
     gap: 30px;
+}
+
+@media (max-width: 1200px) {
+    .anuncios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
 }
 /*FIM DO ANUNCIOS*/
 
